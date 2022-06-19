@@ -152,7 +152,7 @@
 
    .all{
         
-      height:100%;
+      height:max-content;
       width:100%;
       top:5.1rem;
       align-items: center;
