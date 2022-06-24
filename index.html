@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend teste</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link  rel="stylesheet" type="text/css"  href="styleHeader.css">
+  <link  rel="stylesheet" type="text/css"  href="styleMain.css">
+  
+</head>
+<body>
+<header id="header">
+    <div id="plus">
+        <div id="logo"></div> 
+        <ul class="header_ulFirst">
+          <li class="first features" onclick="drop1()">Features<div id="features_arrow"></div></li>
+          <li class="first company"onclick="drop2()">Company<div id="company_arrow"></div></li>
+          <li class="first careers" >Careers</li>
+          <li class="first about">About</li>
+        </ul>
+    </div>
+    <ul id="btn" onclick="btn()">
+      <li id="btn1" class="off"></li>
+      <li id="btn2" class="off"></li>
+      <li id="btn3" class="off"></li>
+
+    </ul>
+
+    <ul class="header_ulSecond">
+        <li class="second login">Login</li>
+        <li class="second register">Register</li>
+    </ul>
+
+    <ul id="dropdown" >
+      <li class="drop lista">Lista to do</li>
+      <li class="drop calendario">Calendário</li>
+      <li class="drop lembretes">Lembretes</li>
+      <li class="drop plan">Planejamento</li>
+    </ul>
+    <ul id="dropdown2" >
+      <li class="drop2 historia">Histórico</li>
+      <li class="drop2 equipe">Nosso time</li>
+      <li class="drop2 blog">blog</li>
+    </ul>
+    
+    
+</header>
+  <div class="all">
+    
+    <div id="mainContainer">    
+        <p id="h1">Trabalhe em home office</p>
+        <p id="texto">Entre em contato com sua equipe, não importa onde esteja, o processo 
+          de streaming aumenta a sincronia e faz com que a produtividade dispare.
+        </p>
+        <a href="https://www.linkedin.com/in/arthur-barata-64aa7519b/"><div id="saiba">Saiba mais</div></a>
+        
+      <footer>
+          <ul class="footer_ul">
+            <li class="liFooter"><div class="image um"></div></li>
+            <li class="liFooter"><div class="image dois"></div></li>
+            <li class="liFooter"><div class="image tres"></div></li>
+            <li class="liFooter"><div class="image quatro"></div></li>
+          </ul>
+      </footer>
+    </div> 
+
+    <div id="mainImage"></div>
+    
+
+  </div>
+<div id="mobile_menu">
+  <ul class="header_ulFirst_mobile">
+    <li class="first features" onclick="drop_mobile()">Features<div id="features_arrow"></div>
+      <ul id="dropdown_mobile" >
+        <li class="drop lista">Lista to do</li>
+        <li class="drop calendario">Calendário</li>
+        <li class="drop lembretes">Lembretes</li>
+        <li class="drop plan">Planejamento</li>
+      </ul>
+    </li>
+    <li class="first company" onclick="drop2_mobile()">Company<div id="company_arrow"></div>
+      <ul id="dropdown2_mobile"  >
+        <li class="drop2 historia">Histórico</li>
+        <li class="drop2 equipe">Nosso time</li>
+        <li class="drop2 blog">blog</li>
+      </ul>
+    </li>
+    <li class="first careers" >Careers</li>
+    <li class="first about">About</li>
+  </ul>
+
+  <ul class="header_ulSecond_mobile">
+    <li class="second login">Login</li>
+    <li class="second register">Register</li>
+  </ul>
+</div>  
+<script src="script.js"></script>
+
+</body>
+</html>
